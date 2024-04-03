@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import './App.css'
 import SearchBar from './components/SearchBar'
 
@@ -10,5 +9,4 @@ function App() {
     </>
   )
 }
-
 export default App

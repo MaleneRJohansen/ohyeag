@@ -6,8 +6,9 @@ const SearchBar = () => {
   return (
     <>
     <h1>Book Search</h1>
-    <FontAwesomeIcon icon={faMagnifyingGlass} />
     <input type='text' placeholder='Search...'></input>
+    {/*Ikonet under er hentet fra fontawesome.com. Link til ikon her: "https://fontawesome.com/icons/magnifying-glass?f=classic&s=solid"*/}
+    <FontAwesomeIcon icon={faMagnifyingGlass} />
     </>
   )
 }
