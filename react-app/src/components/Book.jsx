@@ -3,7 +3,7 @@ import React from 'react';
 
 function Book({ book }) {
   return (
-    <div className="book">
+    <div className="books">
       <h2>{book.title}</h2>
       <p>First published: {book.first_publish_year}</p>
       <p>Author: {book.author_name}</p>

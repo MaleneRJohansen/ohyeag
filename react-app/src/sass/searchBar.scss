@@ -1,0 +1,23 @@
+.search-bar{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin: 3rem;
+}
+
+.input{
+    width: 40%;
+    display: flex;
+    padding: 1rem;
+    border-radius: 2rem;
+    border-style: solid;
+    border-color: palevioletred;
+}
+
+.button{
+    display: flex;
+    padding: 0.5rem 1.5rem;
+    margin: 0.5rem;
+    border-radius: 2rem;
+    border-style: solid;
+}

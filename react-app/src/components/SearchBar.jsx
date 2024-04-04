@@ -13,14 +13,14 @@ const SearchBar = ({ onSearch }) => {
   };
 
   return (
-    <div>
-      <input
+    <div className='search-bar'>
+      <input className='input'
         type="text"
         value={searchTerm}
         onChange={handleChange}
         placeholder="Search by book title"
       />
-      <button onClick={handleSearchClick} disabled={searchTerm.length < 3}>Search</button>
+      <button className='button' onClick={handleSearchClick} disabled={searchTerm.length < 3}>Search</button>
     </div>
   );
 };

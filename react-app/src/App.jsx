@@ -3,6 +3,11 @@ import React, { useState, useEffect } from 'react';
 import SearchResults from './components/SearchResults';
 import { searchBooks, fetchJamesBondBooks } from './api';
 import SearchBar from './components/SearchBar';
+import './sass/app.scss';
+import './sass/book.scss';
+import './sass/searchBar.scss';
+import './sass/searchResults.scss'
+
 
 function App() {
   const [searchQuery, setSearchQuery] = useState('');
