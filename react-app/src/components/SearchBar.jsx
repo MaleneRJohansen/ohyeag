@@ -1,16 +1,28 @@
-import React from 'react'
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
-import {faMagnifyingGlass} from '@fortawesome/free-solid-svg-icons'
+// SearchBar.jsx
+import React, { useState } from 'react';
 
-const SearchBar = () => {
+const SearchBar = ({ onSearch }) => {
+  const [searchTerm, setSearchTerm] = useState('');
+
+  const handleChange = (e) => {
+    setSearchTerm(e.target.value);
+  };
+
+  const handleSearchClick = () => {
+    onSearch(searchTerm);
+  };
+
   return (
-    <>
-    <h1>Book Search</h1>
-    <input type='text' placeholder='Search...'></input>
-    {/*Ikonet under er hentet fra fontawesome.com. Link til ikon her: "https://fontawesome.com/icons/magnifying-glass?f=classic&s=solid"*/}
-    <FontAwesomeIcon icon={faMagnifyingGlass} />
-    </>
-  )
-}
+    <div>
+      <input
+        type="text"
+        value={searchTerm}
+        onChange={handleChange}
+        placeholder="Search by book title"
+      />
+      <button onClick={handleSearchClick} disabled={searchTerm.length < 3}>Search</button>
+    </div>
+  );
+};
 
-export default SearchBar
+export default SearchBar;
