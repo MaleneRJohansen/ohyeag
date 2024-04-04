@@ -1,15 +1,14 @@
-// BookList.jsx
-import React from 'react';
-import Book from './Book';
+import React from 'react'
+import BookCard from './BookCard'
 
 function SearchResults({ books }) {
   return (
     <div className='book-list'>
       {books.map(book => (
-        <Book key={book.key} book={book} />
+        <BookCard key={book.key} book={book} />
       ))}
     </div>
-  );
+  )
 }
 
-export default SearchResults;
+export default SearchResults

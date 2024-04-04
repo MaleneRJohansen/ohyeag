@@ -1,7 +1,6 @@
-// Book.jsx
-import React from 'react';
+import React from 'react'
 
-function Book({ book }) {
+function BookCard({ book }) {
   return (
     <div className="books">
       <h2>{book.title}</h2>
@@ -10,7 +9,7 @@ function Book({ book }) {
       <p>Average rating: {book.ratings_average}</p>
       <a href={`https://www.amazon.com/s?k=${book.id_amazon}`} target="_blank" rel="noopener noreferrer">Amazon search</a>
     </div>
-  );
+  )
 }
 
-export default Book;
+export default BookCard

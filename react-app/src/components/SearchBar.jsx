@@ -1,16 +1,15 @@
-// SearchBar.jsx
-import React, { useState } from 'react';
+import React, { useState } from 'react'
 
 const SearchBar = ({ onSearch }) => {
-  const [searchTerm, setSearchTerm] = useState('');
+  const [searchTerm, setSearchTerm] = useState('')
 
   const handleChange = (e) => {
-    setSearchTerm(e.target.value);
-  };
+    setSearchTerm(e.target.value)
+  }
 
   const handleSearchClick = () => {
-    onSearch(searchTerm);
-  };
+    onSearch(searchTerm)
+  }
 
   return (
     <div className='search-bar'>
@@ -22,7 +21,7 @@ const SearchBar = ({ onSearch }) => {
       />
       <button className='button' onClick={handleSearchClick} disabled={searchTerm.length < 3}>Search</button>
     </div>
-  );
-};
+  )
+}
 
-export default SearchBar;
+export default SearchBar
